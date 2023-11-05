@@ -180,56 +180,6 @@ void menu()
 }
 
 
-//void build()
-//
-//{
-//
-//
-//    system("cls");
-//
-//    cout<<"Build The Table";
-//
-//    cout << endl;
-//    
-//    cout << "maximum number of entries  -----  >  20" << endl;
-//
-//    cout << "how many do you want    ----->";
-//
-//    cin >> num;
-//
-//    cout << "Enter The Following Items" << endl;
-//
-//    for (int i = 0; i <= num - 1; i++)
-//
-//    {
-//
-//        cout << " Name  ";
-//
-//        cin >> emp[i].name;
-//
-//        cout << "Code  ";
-//
-//        cin >> emp[i].code;
-//
-//        cout << "Designation  ";
-//
-//        cin >> emp[i].designation;
-//
-//        cout << "Years of Experience  ";
-//
-//        cin >> emp[i].exp;
-//
-//        cout << "Age  ";
-//
-//        cin >> emp[i].age;
-//
-//    }
-//
-//    cout << "going to main menu";
-//
-//    Sleep(500);
-//
-//}
 
 void build() {
     system("cls");
@@ -238,7 +188,7 @@ void build() {
     cout << "how many do you want -----> ";
     int requestedEntries;
     cin >> requestedEntries;
-
+	
     if (requestedEntries > max) {
         cout << "Error: The number of entries exceeds the maximum allowed." << endl;
         Sleep(2000); // Delay for 2 seconds
@@ -1448,7 +1398,7 @@ void heapSortExp(struct employee arr[], int n) {
         arr[0] = arr[i];
         arr[i] = temp;
 
-        heapifyAge(arr, i, 0);
+        heapifyExp(arr, i, 0);
     }
 }
 
